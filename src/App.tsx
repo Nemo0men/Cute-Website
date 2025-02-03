@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, X, Music, Car, Beef, Shrub, Boxes, MoonStar } from 'lucide-react';
 import co from '/resources/co.jpg'; 
+import walnut from '/resources/walnut.jpg';
+import clay from '/resources/clay.jpg';
+import parking from '/resources/parking.jpg';
+import guitar from '/resources/guitar.jpg';
 
 function App() {
   const [name, setName] = useState('');
@@ -25,14 +29,14 @@ function App() {
       time: "5:00 PM",
       activity: "Picnic at Walnut Creek Park",
       description: "They say the sun will set at around 5:40 PM. \nWe'll see if that's true.",
-      image: "/resources/walnut.jpg",
+      image: walnut,
       position: "left"
     },
     {
       time: "5:40 PM",
       activity: "Jam Special",
       description: "Featuring our special songs:\n\n♪ Easy\n♪ When You Fall\n♪ Nothing",
-      image: "/resources/guitar.jpg",
+      image: guitar,
       position: "right"
     },
     {
@@ -46,14 +50,14 @@ function App() {
       time: "8:00 PM",
       activity: "Clay Workshop",
       description: "Playdate minus the roommates?",
-      image: "/resources/clay.jpg",
+      image: clay,
       position: "left"
     },
     {
       time: "10:00 PM",
       activity: "Moongazing",
       description: "Ending our day with a view of the moon. \nI know a place hopefully not too cold.",
-      image: "/resources/parking.jpg",
+      image: parking,
       position: "right"
     }
   ];

@@ -5,7 +5,8 @@ import walnut from '/resources/walnut.jpg';
 import clay from '/resources/clay.jpg';
 import parking from '/resources/parking.jpg';
 import guitar from '/resources/guitar.jpg';
-
+import penguinwallpaper from '/resources/penguinwallpaper.jpg';
+import penguinheart from '/resources/penguinheart.png';
 function App() {
   const [name, setName] = useState('');
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -121,16 +122,14 @@ function App() {
           <div className="h-auto max-w-lg w-full bg-white rounded-2xl shadow-xl p-10 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-[100%]">
               <img 
-                src="https://images.unsplash.com/photo-1626544827763-d516dce335e2?auto=format&fit=crop&q=80&w=800"
-                alt="Cute bunny pattern"
+                src={penguinwallpaper}
+                alt="Cute penguin pattern"
                 className="w-full h-full object-cover opacity-20"
               />
             </div>
             <div className="relative flex flex-col h-full justify-between">
               <div>
-                <h1 className="text-3xl font-bold text-pink-600 text-center mb-6">
-                  (∩｀-´)⊃━☆ﾟ.*･｡ﾟ 
-                </h1>
+                <img src={penguinheart} alt="Penguin heart" className="h-30 mx-auto mb-8" />
                 <p className="text-gray-600 text-center mb-8">
                   Unlock the puzzle with mind sharp and keen, <br />
                   Or be forever trapped where no path is seen. <br /> <br />

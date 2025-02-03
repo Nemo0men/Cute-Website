@@ -7,7 +7,7 @@ import parking from '/resources/parking.jpg';
 import guitar from '/resources/guitar.jpg';
 import penguinwallpaper from '/resources/penguinwallpaper.jpg';
 import penguinheart from '/resources/penguinheart.png';
-import map from '/resources/walnut.pdf';
+const map = 'https://cambc.org/images/walnutcreek_trls_for_brochure.pdf';
 
 function App() {
   const [name, setName] = useState('');

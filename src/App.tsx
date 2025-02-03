@@ -7,6 +7,8 @@ import parking from '/resources/parking.jpg';
 import guitar from '/resources/guitar.jpg';
 import penguinwallpaper from '/resources/penguinwallpaper.jpg';
 import penguinheart from '/resources/penguinheart.png';
+import map from '/resources/walnut.pdf';
+
 function App() {
   const [name, setName] = useState('');
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -259,7 +261,7 @@ function App() {
                         {/* Add PDF link for the first card */}
                         {index === 0 && (
                           <a 
-                            href="/resources/walnut.pdf" 
+                            href={map} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="mt-4 text-pink-500 underline"

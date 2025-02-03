@@ -62,3 +62,19 @@
     0 0 0 1px rgba(255, 255, 255, 1),
     0 0 0 3px rgba(249, 168, 212, 0.2);
 }
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .polaroid {
+    padding: 0.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .transform-style-3d {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .road {
+    height: 5px; /* Adjust road height for smaller screens */
+  }
+}

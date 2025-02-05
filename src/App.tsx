@@ -73,7 +73,14 @@ function App() {
       const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
       const estNow = new Date(utc + (3600000 * estOffset));
 
-      // Check if the current date is before February 4th
+      // Check if the current date is after February 4, 2025
+      const endDate = new Date(2025, 1, 4); // February 4, 2025
+      if (estNow > endDate) {
+        setCarPosition(100);
+        return;
+      }
+
+      // Check if the current date is before February 4th of the current year
       const startDate = new Date(estNow.getFullYear(), 1, 4); // February 4th
       if (estNow < startDate) {
         setCarPosition(0);
